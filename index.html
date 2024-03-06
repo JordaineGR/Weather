@@ -3,37 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <title>Weather App</title>
   </head>
 
   <body>
-    <header>
-      <form>
-        <input type="text" placeholder="Enter a city.." required />
-        <input type="submit" name="Search" id="" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>San Francisco</h1>
-        <p>
-          Tuesday 12:35, scattered showers
-          <br />
-          Humidity: 60, Wind: 3.31%
-        </p>
-      </div>
-      <div>⛅ 12°C</div>
-    </main>
+    <div class="weatherapp">
+      <header>
+        <form>
+          <input type="text" placeholder="Enter a city.." required />
+          <input type="submit" name="Search" id="" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>San Francisco</h1>
+          <p>
+            Tuesday 12:35, scattered showers
+            <br />
+            Humidity: 60, Wind: 3.31%
+          </p>
+        </div>
+        <div>⛅ 12°C</div>
+      </main>
 
-    <footer>
-      This was coded by
-      <a href="https://github.com/jordaineGR" target="_blank"> Jordaine</a>,
-      code hosted on
-      <a href="https://github.com/JordaineGR/Weather" target="_blank">GitHub</a>
-      and website hosted on
-      <a href="https://jordainesweatherapp.netlify.app/" target="_blank"
-        >Netifly</a
-      >
-    </footer>
+      <footer>
+        This was coded by
+        <a href="https://github.com/jordaineGR" target="_blank"> Jordaine</a>,
+        code hosted on
+        <a href="https://github.com/JordaineGR/Weather" target="_blank"
+          >GitHub</a
+        >
+        and website hosted on
+        <a href="https://jordainesweatherapp.netlify.app/" target="_blank"
+          >Netifly</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
