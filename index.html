@@ -6,28 +6,43 @@
     <link rel="stylesheet" href="src/index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Weather App</title>
   </head>
 
-  <body>
+  <body background="images/backgound.jpg">
     <div class="weatherapp">
       <header>
-        <form>
-          <input type="text" placeholder="Enter a city.." required />
-          <input type="submit" name="Search" id="" />
+        <form class="search-form">
+          <input
+            type="text"
+            placeholder="Enter a city.."
+            required
+            class="search-form-input"
+          />
+          <input type="submit" name="Search" class="search-form-button" />
         </form>
       </header>
       <main>
-        <div>
-          <h1>San Francisco</h1>
-          <p>
-            Tuesday 12:35, scattered showers
-            <br />
-            Humidity: 60, Wind: 3.31%
-          </p>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city">San Francisco</h1>
+            <p class="weather-app-details">
+              Tuesday 12:35, scattered showers
+              <br />
+              Humidity: <strong>60 </strong> , Wind: <strong> 3.31%</strong>
+            </p>
+          </div>
+          <div class="weather-app-temperature-container">
+            <div class="weather-app-icon">⛅</div>
+            <div class="weather-app-temperature-value">12</div>
+            <div class="weather-app-unit">°C</div>
+          </div>
         </div>
-        <div>⛅ 12°C</div>
       </main>
 
       <footer>
