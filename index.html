@@ -17,12 +17,13 @@
   <body background="images/backgound.jpg">
     <div class="weatherapp">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="text"
             placeholder="Enter a city.."
             required
             class="search-form-input"
+            id="search-form-input"
           />
           <input type="submit" name="Search" class="search-form-button" />
         </form>
@@ -30,7 +31,7 @@
       <main>
         <div class="weather-app-data">
           <div>
-            <h1 class="weather-app-city">San Francisco</h1>
+            <h1 class="weather-app-city" id="city">San Francisco</h1>
             <p class="weather-app-details">
               Tuesday 12:35, scattered showers
               <br />
@@ -57,6 +58,7 @@
           >Netifly</a
         >
       </footer>
+      <script src="src/index.js"></script>
     </div>
   </body>
 </html>
