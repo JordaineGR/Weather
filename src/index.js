@@ -53,8 +53,35 @@ function handleSearchSubmit(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Thur", "Fri", "Sat", "Sun", "Mon"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `   <div class="weather-forecast-day">
+            <div class="weather-forecast-date">${day}</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
+              alt=""
+              width="42"
+            />
+            <div class="weather-forcast-temepratures">
+              <span id="weather-forecast-temeprature- max"> 18° </span>
+              <span class="weather-forecast-temperature-min"> 12°</span>
+            </div>
+          </div>
+          
+`;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHTML;
+}
+
 let searchFormElement = document.querySelector("#search-form");
 
 searchFormElement.addEventListener("submit", handleSearchSubmit);
 
 searchCity("Port of Spain");
+displayForecast();
