@@ -94,12 +94,18 @@ footer {
 }
 .weather-forecast {
   margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .weather-forecast-date {
   text-align: 13px;
   color: #ff9a3c;
   opacity: 0.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .weather-forecast-temperatures {
   font-size: 13px;
