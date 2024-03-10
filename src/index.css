@@ -3,7 +3,7 @@ body {
   background-size: 1550px;
 }
 .weatherapp {
-  background: rgba(163, 222, 131, 0.5);
+  background: rgba(20, 45, 76, 0.6);
   max-width: 600px;
   margin: 60px auto;
   box-shadow: 3px 3px 6px rgba(67, 66, 66, 0.4);
@@ -51,6 +51,7 @@ main {
   font-size: 16px;
   display: flex;
   margin-top: -20px;
+  color: white;
 }
 
 .weather-app-city {
@@ -64,6 +65,7 @@ main {
   display: flex;
   margin-left: 50px;
   margin-top: -30px;
+  color: white;
 }
 
 .weather-app-icon {
@@ -78,12 +80,13 @@ main {
   font-size: 28px;
 }
 .weather-app-conditions {
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 18px;
   font-weight: 500;
   list-style: none;
   margin-left: 350px;
-  margin-top: -100px;
+  margin-top: -90px;
+  color: white;
 }
 
 .weather-forecast {
@@ -93,7 +96,7 @@ main {
   align-items: center;
   border-radius: 16px;
   padding: 35px 20px;
-  background-color: rgba(56, 129, 122, 0.3);
+  background-color: #385170;
   margin-bottom: -20px;
   color: white;
   font-size: 16px;
