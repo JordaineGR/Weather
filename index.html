@@ -15,7 +15,7 @@
     <title>Weather App</title>
   </head>
 
-  <body background="images/backgound.jpg" width="12">
+  <body background="images/background-photo.jpg">
     <div class="weatherapp">
       <header>
         <form class="search-form" id="search-form">
@@ -26,50 +26,47 @@
             class="search-form-input"
             id="search-form-input"
           />
-          <input type="submit" name="Search" class="search-form-button" />
+          <input
+            type="submit"
+            name="Search"
+            class="search-form-button"
+            value="SEARCH"
+          />
         </form>
       </header>
       <main>
         <div class="weather-app-data">
-          <div>
-            <h1 class="weather-app-city" id="city">San Francisco</h1>
-            <p class="weather-app-details">
-              <span id="time"> </span>,
-              <span id="description"> </span>
-              <br />
-              Humidity: <strong id="humidity"> </strong> , Wind:
-              <strong id="wind"></strong>
-            </p>
-          </div>
-          <div class="weather-app-temperature-container">
-            <div id="icon">
-              <img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/few-clouds-day.png"
-                alt=""
-                class="weather-app-icon"
-              />
-            </div>
+          <p class="time" id="time"></p>
+          <h1 class="weather-app-city" id="city"></h1>
 
-            <div class="weather-app-temperature-value" id="temperature">12</div>
-            <div class="weather-app-unit">°C</div>
+          <div>
+            <div class="weather-app-temperature-container">
+              <div class="weather-app-icon" id="icon"></div>
+
+              <div class="weather-app-temperature-value" id="temperature"></div>
+              <div class="weather-app-unit">°C</div>
+            </div>
           </div>
+          <p class="weather-app-conditions">
+            <span id="description"> </span> <br />
+            <span>
+              humidity:
+              <strong id="humidity"> </strong>
+            </span>
+            <br />
+            <span>
+              wind:
+              <strong id="wind"></strong>
+            </span>
+          </p>
         </div>
         <div class="weather-forecast" id="forecast"></div>
       </main>
-
-      <footer>
-        This was coded by
-        <a href="https://github.com/jordaineGR" target="_blank"> Jordaine</a>,
-        it's hosted on
-        <a href="https://github.com/JordaineGR/Weather" target="_blank"
-          >GitHub</a
-        >
-        and website hosted on
-        <a href="https://jordainesweatherapp.netlify.app/" target="_blank"
-          >Netlify</a
-        >
-      </footer>
-      <script src="src/index.js"></script>
     </div>
+    <footer>
+      Coded by
+      <a href="https://github.com/jordaineGR" target="_blank"> Jordaine</a>
+    </footer>
+    <script src="src/index.js"></script>
   </body>
 </html>
