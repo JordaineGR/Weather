@@ -131,9 +131,8 @@ a {
   }
   .weatherapp {
     max-width: 250px;
-    margin: 80px 15px;
-    display: block;
     justify-content: center;
+    margin: 0 auto;
   }
 
   .weather-app-temperature-container {
