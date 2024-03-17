@@ -126,17 +126,14 @@ a {
 }
 
 @media (max-width: 576px) {
-  .main {
-    margin-top: 50px;
-  }
   .weatherapp {
-    max-width: 250px;
+    max-width: 300px;
+    margin: 100px auto;
     justify-content: center;
-    margin: 0 auto;
   }
 
   .weather-app-temperature-container {
-    margin: -5px 0 20px -20px;
+    margin: -5px 0 20px -10px;
   }
   .weather-app-icon {
     width: 100px;
@@ -151,9 +148,9 @@ a {
     margin-top: 15px;
   }
   .weather-app-conditions {
-    font-size: 10.6px;
+    font-size: 12px;
     line-height: 14px;
-    margin: -90px 0 0 170px;
+    margin: -90px 0 0 190px;
   }
   .weather-forecast {
     padding: 25px 10px;
@@ -170,7 +167,7 @@ a {
     font-size: 13px;
   }
   .search-form-input {
-    width: 50%;
+    width: 58%;
     font-size: 13px;
     padding: 10px 15px;
   }
